@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.JWT_SECRET = void 0;
-exports.JWT_SECRET = "tripadvisingsecret-key";
+const JWT_SECRET = "tripadvisingsecret-key";
+exports.default = JWT_SECRET;
 //# sourceMappingURL=constants.js.map

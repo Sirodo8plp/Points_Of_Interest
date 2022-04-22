@@ -5,7 +5,7 @@ import POI from "./POI";
 import Pagination from "./Pagination";
 import useFetch from "../../components/hooks/useGetFetch";
 import GetNumberOfRows from "../../GetNumberOfRows";
-import API_KEY from "../../constants";
+import API_KEY from "../../constants.ts";
 
 const PointOfInterestContainer = () => {
   const [isPending, setIsPending] = useState(null);

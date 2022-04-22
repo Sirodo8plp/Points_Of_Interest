@@ -17,7 +17,6 @@ const ReviewButton = ({ place, onSaveReview }) => {
     setIsOpen(false);
   };
 
-  const closeModalHandler = () => {};
   return (
     <React.Fragment>
       <button
