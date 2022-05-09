@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import "../../../public/POI.css";
 import Review from "./Review";
-import API_KEY from "../../constants.ts";
+import API_KEY from "../../constants.js";
 
 const POI = ({ poi }) => {
   const [imageClassname, setImageClassname] = useState("");

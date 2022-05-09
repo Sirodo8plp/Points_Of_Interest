@@ -15,7 +15,7 @@ app.use(helmet());
 
 async function main() {
   app.get("/", (_, res) => {
-    res.json({ message: "Welcome to bezkoder application." });
+    res.json({ message: "Tripadvising API." });
   });
 
   app.use("/", routes);

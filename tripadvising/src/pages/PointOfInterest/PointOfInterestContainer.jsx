@@ -5,7 +5,7 @@ import POI from "./POI";
 import Pagination from "./Pagination";
 import useFetch from "../../components/hooks/useGetFetch";
 import GetNumberOfRows from "../../GetNumberOfRows";
-import API_KEY from "../../constants.ts";
+import API_KEY from "../../constants";
 
 const PointOfInterestContainer = () => {
   const [isPending, setIsPending] = useState(null);
@@ -15,7 +15,6 @@ const PointOfInterestContainer = () => {
   const lng = coordinates.split("&")[1];
   const place = coordinates.split("&")[2];
   const [POIs, setPOIs] = useState([]);
-
   const { data } =
     useFetch(`https://api.opentripmap.com/0.1/en/places/radius?radius=1000&limit=12&lon=${lng}
   &lat=${lat}&rate=2&format=count&kinds=shops,foods&apikey=${API_KEY}`);
